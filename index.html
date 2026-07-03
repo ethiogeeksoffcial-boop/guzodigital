@@ -377,61 +377,140 @@
 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
-  <div class="tag">Pricing</div>
-  <h2>Simple, Transparent <span class="script">Pricing</span></h2>
-  <p class="lead" style="margin-top:0.4rem">No hidden fees. Cancel anytime. All packages include a free onboarding session.</p>
+  <div class="tag">Advanced Package</div>
+  <h2>Social Media <span class="script">Pricing</span></h2>
+  <p class="lead" style="margin-top:0.4rem">Professional video content with optional full social media management. Starting prices — final quote based on your needs.</p>
+
+  <!-- SMM Toggle -->
+  <div style="display:flex;align-items:center;gap:1rem;margin:2.2rem 0 3rem;flex-wrap:wrap">
+    <span id="lbl-without" style="font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--green2)">Without SMM</span>
+    <button id="smmToggle" onclick="toggleSMM()" aria-pressed="false" style="position:relative;width:52px;height:28px;background:rgba(106,191,46,0.15);border:1.5px solid rgba(106,191,46,0.35);border-radius:50px;cursor:pointer;transition:background 0.3s,border-color 0.3s;flex-shrink:0">
+      <span id="smmThumb" style="position:absolute;top:3px;left:3px;width:18px;height:18px;background:var(--green);border-radius:50%;transition:transform 0.3s,background 0.3s;display:block"></span>
+    </button>
+    <span id="lbl-with" style="font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)">With SMM</span>
+    <span id="smm-badge" style="font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;background:var(--green);color:var(--bg);padding:0.25rem 0.8rem;border-radius:50px;opacity:0;transition:opacity 0.3s">+ Full Management Included</span>
+  </div>
+
+  <!-- 3 Cards — same existing classes -->
   <div class="pricing-grid">
+
     <div class="pcard">
-      <div class="pcard-tier">Starter</div>
-      <div class="pcard-price"><span class="pcard-curr">ETB</span>4,500</div>
-      <div class="pcard-mo">per month</div>
+      <div class="pcard-tier">2 Videos / Week</div>
+      <div class="pcard-price"><span class="pcard-curr">ETB</span><span class="pval" data-off="6,000" data-on="8,000">6,000</span></div>
+      <div class="pcard-mo">per month &nbsp;·&nbsp; 8 videos</div>
       <div class="pcard-div"></div>
       <ul>
-        <li>2 social media platforms</li>
-        <li>12 posts per month</li>
-        <li>Basic graphic design</li>
-        <li>Community management</li>
-        <li>Monthly performance report</li>
-        <li>WhatsApp support</li>
+        <li>8 professional videos/month</li>
+        <li>Video shooting on location</li>
+        <li>Full editing — color, sound, captions</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Full social media strategy</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly content calendar</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Hosting & page management</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly performance report</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">DM / comment engagement</li>
       </ul>
       <a href="#contact" class="pcard-btn">Get Started</a>
     </div>
+
     <div class="pcard hot">
       <div class="pcard-hot">Most Popular</div>
-      <div class="pcard-tier">Growth</div>
-      <div class="pcard-price"><span class="pcard-curr">ETB</span>9,500</div>
-      <div class="pcard-mo">per month</div>
+      <div class="pcard-tier">3 Videos / Week</div>
+      <div class="pcard-price"><span class="pcard-curr">ETB</span><span class="pval" data-off="8,000" data-on="10,000">8,000</span></div>
+      <div class="pcard-mo">per month &nbsp;·&nbsp; 12 videos</div>
       <div class="pcard-div"></div>
       <ul>
-        <li>4 social media platforms</li>
-        <li>24 posts + 8 stories/month</li>
-        <li>Advanced content creation</li>
-        <li>Meta & TikTok Ads (up to ETB 5k)</li>
-        <li>Monthly strategy session</li>
-        <li>Competitor analysis</li>
-        <li>Priority support</li>
+        <li>12 professional videos/month</li>
+        <li>Video shooting on location</li>
+        <li>Full editing — color, sound, captions</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Full social media strategy</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly content calendar</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Hosting & page management</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly performance report</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">DM / comment engagement</li>
       </ul>
       <a href="#contact" class="pcard-btn">Get Started</a>
     </div>
+
     <div class="pcard">
-      <div class="pcard-tier">Premium</div>
-      <div class="pcard-price"><span class="pcard-curr">ETB</span>18,000</div>
-      <div class="pcard-mo">per month</div>
+      <div class="pcard-tier">4 Videos / Week</div>
+      <div class="pcard-price"><span class="pcard-curr">ETB</span><span class="pval" data-off="12,000" data-on="15,000">12,000</span></div>
+      <div class="pcard-mo">per month &nbsp;·&nbsp; 16 videos</div>
       <div class="pcard-div"></div>
       <ul>
-        <li>All platforms included</li>
-        <li>Unlimited content creation</li>
-        <li>Website maintenance</li>
-        <li>Full paid ads management</li>
-        <li>Weekly strategy calls</li>
-        <li>SEO optimization</li>
-        <li>Dedicated account manager</li>
-        <li>Custom reports & dashboard</li>
+        <li>16 professional videos/month</li>
+        <li>Video shooting on location</li>
+        <li>Full editing — color, sound, captions</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Full social media strategy</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly content calendar</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Hosting & page management</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">Monthly performance report</li>
+        <li class="smm-li" style="opacity:0.3;transition:opacity 0.3s">DM / comment engagement</li>
       </ul>
       <a href="#contact" class="pcard-btn">Get Started</a>
+    </div>
+
+  </div>
+
+  <!-- What's included note — no new classes, inline style only -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:1px;background:rgba(106,191,46,0.1)">
+    <div style="background:var(--bg);padding:1.8rem 2rem">
+      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem">Without SMM — Video Only</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.55rem">
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Professional video shooting</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Full video editing</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Files delivered directly to you</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--muted);flex-shrink:0">✕</span>No posting, page handling, or strategy</li>
+      </ul>
+    </div>
+    <div style="background:var(--bg3);padding:1.8rem 2rem">
+      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--green);margin-bottom:1rem">With SMM — Full Management</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.55rem">
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Everything in Video Only, plus:</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Full social media strategy & content calendar</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Hosting & page management</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>Monthly performance report</li>
+        <li style="font-size:0.78rem;color:var(--muted);display:flex;gap:0.5rem"><span style="color:var(--green);flex-shrink:0">→</span>DM / comment engagement support</li>
+      </ul>
     </div>
   </div>
+
 </section>
+
+<script>
+  var smmOn = false;
+  function toggleSMM() {
+    smmOn = !smmOn;
+    var btn = document.getElementById('smmToggle');
+    var thumb = document.getElementById('smmThumb');
+    var badge = document.getElementById('smm-badge');
+    var lblOn = document.getElementById('lbl-with');
+    var lblOff = document.getElementById('label-without') || document.getElementById('lbl-without');
+
+    // Toggle button appearance
+    btn.style.background = smmOn ? 'var(--green)' : 'rgba(106,191,46,0.15)';
+    btn.style.borderColor = smmOn ? 'var(--green)' : 'rgba(106,191,46,0.35)';
+    thumb.style.transform = smmOn ? 'translateX(24px)' : 'translateX(0)';
+    thumb.style.background = smmOn ? 'var(--bg)' : 'var(--green)';
+
+    // Badge
+    badge.style.opacity = smmOn ? '1' : '0';
+
+    // Labels
+    lblOn.style.color = smmOn ? 'var(--green2)' : 'var(--muted)';
+    document.getElementById('lbl-without').style.color = smmOn ? 'var(--muted)' : 'var(--green2)';
+
+    // Swap prices
+    document.querySelectorAll('.pval').forEach(function(el) {
+      el.textContent = smmOn ? el.getAttribute('data-on') : el.getAttribute('data-off');
+    });
+
+    // Light up / dim SMM features
+    document.querySelectorAll('.smm-li').forEach(function(li) {
+      li.style.opacity = smmOn ? '1' : '0.3';
+      li.style.color = smmOn ? 'var(--green2)' : '';
+    });
+  }
+</script>
 
 <!-- FAQ -->
 <section class="faq" id="faq">
